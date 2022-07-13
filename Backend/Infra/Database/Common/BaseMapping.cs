@@ -24,9 +24,9 @@ namespace Infra.Database.Common
             builder.HasKey(e => e.Id);
             builder.Property(e => e.Id).ValueGeneratedOnAdd();
 
-            builder.Property(e => e.CriadoEm).HasColumnName("criado_em").HasColumnType("DATETIME").IsRequired();
-            builder.Property(e => e.UltimaAtualizacaoEm).HasColumnName("ultima_atualizacao_em").HasColumnType("DATETIME").IsRequired(false);
-            builder.Property(e => e.EhAtivo).HasColumnName("ativo").IsRequired();
+            builder.Property(e => e.CriadoEm).HasColumnName("CRIADO_EM").HasColumnType("DATETIME").IsRequired();
+            builder.Property(e => e.UltimaAtualizacaoEm).HasColumnName("ULTIMA_ATUALZIACAO_EM").HasColumnType("DATETIME").IsRequired(false);
+            builder.Property(e => e.EhAtivo).HasColumnName("ATIVO").IsRequired();
         }
 
         protected abstract void MapearEntidade(EntityTypeBuilder<TEntity> builder);

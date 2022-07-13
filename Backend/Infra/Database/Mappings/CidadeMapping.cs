@@ -17,7 +17,8 @@ namespace Infra.Database.Mappings
             builder.HasMany(c => c.Pessoas)
                 .WithOne(p => p.Cidade)
                 .HasForeignKey(p => p.CidadeId)
-                .HasPrincipalKey(c => c.Id);
+                .HasPrincipalKey(c => c.Id)
+                .OnDelete(DeleteBehavior.Cascade);
         }
         protected override void MapearIndices(EntityTypeBuilder<Cidade> builder)
         {
