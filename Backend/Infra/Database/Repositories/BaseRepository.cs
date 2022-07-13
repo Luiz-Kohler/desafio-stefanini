@@ -43,14 +43,12 @@ namespace Infra.Database.Repositories
 
         public async Task ExcluirVarios(IEnumerable<TEntity> entidades)
         {
-            entidades.Select(entidade =>
+            await AtualizarVarios(entidades.Select(entidade =>
             {
                 entidade.Desativar();
 
                 return entidade;
-            });
-
-            await AtualizarVarios(entidades);
+            }));
         }
 
         public async Task Inserir(TEntity entidade)
