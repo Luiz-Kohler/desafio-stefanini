@@ -1,6 +1,6 @@
-# Sistema de Locadora
+# Desafio Stefanini
 
-## Um sistema feito para uma etapa do processo seletivo da empresa stefanini.
+## Um sistema feito para uma etapa do processo seletivo da empresa Stefanini.
 
 ### Banco de dados
 - SQL Servcer
