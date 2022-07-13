@@ -1,6 +1,6 @@
 # Sistema de Locadora
 
-## Um sistema completo de locadora feito para uma etapa do processo seletivo da empresa stefanini.
+## Um sistema feito para uma etapa do processo seletivo da empresa stefanini.
 
 ### Banco de dados
 - SQL Servcer
